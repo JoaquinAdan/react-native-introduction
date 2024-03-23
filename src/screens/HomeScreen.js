@@ -1,5 +1,5 @@
-import { Text, Button, View } from 'react-native'
-// import { SafeAreaView } from 'react-native-safe-area-context'
+import { Text, Button } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context'
 import React from 'react'
 
 export default function HomeScreen(props) {
@@ -8,13 +8,13 @@ export default function HomeScreen(props) {
     navigation.navigate('Settings')
   }
   return (
-    <View>
+    <SafeAreaView>
       <Text>HomeScreen</Text>
       <Text>HomeScreen</Text>
       <Text>HomeScreen</Text>
       <Text>HomeScreen</Text>
       <Text>HomeScreen</Text>
       <Button title='Ajustes' onPress={goToSettings} />
-    </View>
+    </SafeAreaView>
   )
 }
